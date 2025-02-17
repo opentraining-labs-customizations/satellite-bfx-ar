@@ -6,5 +6,5 @@
     - sudo cp /opt/satellite-bfx-support/lab /usr/local/bin/
     - sudo chmod +x /usr/local/bin/lab
 
-#- name: Install the ansible-galaxy collection
-#  ansible.builtin.command: "ansible-galaxy collection install -r /opt/satellite-bfx-support/requirements.yml -p /usr/share/ansible/collections/"
+- name: Install the ansible-galaxy collection
+  ansible.builtin.command: "sudo ansible-galaxy collection install -r /opt/satellite-bfx-support/requirements.yml -p /usr/share/ansible/collections/"
